@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/signup_iframe.css">
+    <link rel="stylesheet" href="style/about.css" type="text/css">
+    <title>About</title>
+</head>
+
+<body>
+    <!-- BACK TO TOP -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <img src="img/Untitled-1.png" alt="back to top">
+        <p>back to top</p>
+    </button>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="about.html" target="_self">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+
+                <div class="hamburger-content">
+                    <a href="index.html" target="_self">Home</a>
+                    <a href="about.html" target="_self">About</a>
+                </div>
+            </div>
+        </nav>
+        <a href="#" class="myButton" onclick="showSignUpForm()">Sign In</a>
+        <div class="profile" onclick="showSignUpForm()"> <img src="img/profile.png" alt="profile"> </div>
+    </header>
+
+    <!-- REGISTER IFRAME -->
+    <div id="signUpIframe">
+        <iframe src="./signup.html" width="500px" height="600px" scrolling="no" frameBorder="0"></iframe>
+        <div id="registerOptions">
+            <div id="cancelButton" class="registerBtnOption" onclick="hideSignUpForm()">Cancel</div>
+            <div id="registerButton" class="registerBtnOption" onclick="hideSignUpForm()">Register</div>
+
+        </div>
+    </div>
+    <!-- SIDE BAR NAVIGATION -->
+    <section class="sideBarNav">
+        <!-- <div class="arrownav"> -->
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="#typeVR">The three types of VR</a>
+                </li>
+                <li> <a href="#caseVR">Cases of VR</a>
+                </li>
+                <li>
+                    <a href="#appVR">The best VR apps for 2022</a>
+                </li>
+            </ul>
+        </div>
+        <!-- </div> -->
+    </section>
+
+    <!-- WHAT IS VR -->
+    <section class="vr">
+        <div class="content">
+            <h2>What is Virtual Reality ?</h2>
+            <p>Virtual reality is the use of computer technology to create simulated environments. Virtual reality
+                places
+                the user inside a three-dimensional experience. Instead of viewing a screen in front of them, users are
+                immersed in and interact with 3D worlds.
+                Simulation of human senses—all five of them—transforms a computer into a vehicle into new worlds. The
+                only
+                limitation to a superb VR experience is computing power and content availability.
+            </p>
+        </div>
+    </section>
+
+    <!-- TYPES VR -->
+    <section class="typeVR" id="typeVR">
+        <h2>The Three Types of Virtual Reality</h2>
+
+        <div class="types">
+            <div class="type">
+                <h3>Non-Immersive Virtual Reality: </h3>
+                <div>
+                    <p>This catgory is often overlooked as VR simply because it’s so common. Non-immersive VR
+                        technology features a computer-generated virtual environment where the user simultaneously
+                        remains
+                        aware and controlled by their physical environment. Video games are a prime example of
+                        non-immersive VR.</p>
+                </div>
+            </div>
+            <div class="type">
+                <h3>Semi-Immersive Virtual Reality: </h3>
+                <div>
+                    <p>This type of VR provides an experience partially based in a virtual environment. This type of
+                        VR makes sense for educational and training purposes with graphical computing and large
+                        projector systems, such as flight simulators for pilot trainees.</p>
+                </div>
+            </div>
+            <div class="type">
+                <h3>Fully Immersive Virtual Reality:</h3>
+                <div>
+                    <p>Right now, there are no completely immersive VR technologies, but advances are so swift that
+                        they may be right around the corner. This type of VR generates the most realistic simulation
+                        experience, from sight to sound to sometimes even olfactory sensations. Car racing games are
+                        an example of immersive virtual reality that gives the user the sensation of speed and driving
+                        skills. Developed for gaming and other entertainment purposes, VR use in other sectors is
+                        increasing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CASES -->
+    <section class="cases" id="caseVR">
+        <div class="caseInscription">
+            <h2>Use cases of virtual reality</h2>
+            <p>If you think you can make great strides in your business with VR, you think correctly.
+                Whether in education, construction, or healthcare, virtual reality is a great practice canvas for
+                professionals to perform activities in a virtual environment that can be risk-inducing otherwise.
+            </p>
+        </div>
+        <ul class="vrCases">
+            <li>
+                <div class="hedTitle">
+                    <strong>VR in recruitment: </strong>
+                </div>
+                <div class="caseImageDescr">
+                    <img src="img/recruitment.png" alt="recruitment" loading="lazy">
+                    <p>VR recruitment helps employers seek out innovative ways to drive a quality workforce. It also
+                        allows professionals to learn and refine their expertise before joining a company. Generating
+                        employee-friendly virtual interactions increases motivation, productivity, and retention
+                        percentage.</p>
+                </div>
+                </div>
+            </li>
+            <li>
+                <div class="hedTitle">
+                    <strong>VR in Customer Service: </strong>
+                </div>
+                <div class="caseImageDescr">
+                    <img src="img/costumer services.png" alt="costumer services" loading="lazy">
+                    <p>VR creates customer-friendly 3D experiences that show off a brand's unique side. VR has the
+                        potential
+                        to surpass in-store initiatives and give real-time virtual assistance to customers anywhere in
+                        the world.</p>
+                </div>
+            </li>
+            <li>
+                <div class="hedTitle">
+                    <strong>VR in Gaming: </strong>
+                </div>
+                <div class="caseImageDescr">
+                    <img src="img/VR in Gaming .png" alt="gaming" loading="lazy">
+                    <p>With VR gaming, you can explore different bits and pieces of an unknown universe in 3D through
+                        modern-age gaming consoles, controllers, and VR headsets. Many gaming systems like HTC Vive,
+                        Samsung Gear VR, and Oculus Quest, provide immersive gaming experiences without breaking the
+                        flow of virtual immersion.</p>
+                </div>
+            </li>
+            <li>
+                <div class="hedTitle">
+                    <strong>VR in Construction: </strong>
+                </div>
+                <div class="caseImageDescr">
+                    <img src="img/VR in Construction.png" alt="constraction" loading="lazy">
+                    <p>Construction companies are using virtual reality to fine-tune sketches, enable remote
+                        collaboration for architects and workers, and protect the health, safety, and environment (HSE)
+                        protocols for green buildings.</p>
+                </div>
+            </li>
+            <li>
+                <div class="hedTitle">
+                    <strong>VR in design: </strong>
+                </div>
+                <div class="caseImageDescr">
+                    <img src="img/design.png" alt="design" loading="lazy">
+                    <p>Programs like Yulio VR allow companies to share 3D models with clients or collaborators to
+                        incorporate real-time feedback and simulate building designs.</p>
+                </div>
+            </li>
+            <li>
+                <div class="hedTitle">
+                    <strong>VR in travel and tourism: </strong>
+                </div>
+                <div class="caseImageDescr">
+                    <img src="img/VR-travel.png" alt="travel" loading="lazy">
+                    <p>VR lets you conduct virtual tours and guide clients through their travel booking process. A
+                        virtual tour is a collection of 360° panoramic rotating images stitched together to form
+                        simulation
+                        effects. Unique cameras, headsets, and methods elevate the visual experience of the viewer who
+                        wants to
+                        explore a destination without leaving their desk.</p>
+                </div>
+            </li>
+            <li>
+                <div class="hedTitle">
+                    <strong>VR for Mental health: </strong>
+                </div>
+                <div class="caseImageDescr">
+                    <img src="img/VR for Mental health.png" alt="mental health" loading="lazy">
+                    <p>VR tools deliver recreational experiences for people with PTSD, depression, and other cognitive
+                        challenges. Virtual experiences can trigger certain emotions in patients and may increase the
+                        production of serotonin, aiding in recovery</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <!-- BEST APP -->
+    <section class="bestAPP" id="appVR">
+        <div class="AppDiscription">
+            <h2>The best VR apps for 2022</h2>
+            <p>If you think virtual reality apps are designed just for gaming, think again. VR headsets are more
+                accessible than ever before thanks to products like the Oculus Rift, HTC Vive, or Sony PlayStation VR.
+                Developers
+                are creating VR apps that deliver fantastic experiences, from playing immersive video games to exploring
+                landmarks in stunning 360° environments.</p>
+        </div>
+        <div class="best">
+            <div class="card">
+                <div class="imgCard">
+                    <img src="img/expeditions.png">
+                    <a href="https://edu.google.com.au/expeditions/ar/#about" target="_blank">
+                        <h3>Google Expeditions (free)</h3>
+                    </a>
+                </div>
+                <div class="appMore">
+
+                    <p>Travel is one of the joys of globalization, opening up countless avenues of experience and
+                        culture to people who, a century ago, wouldn’t have had access to them. Travel can also be
+                        expensive,
+                        however, and dreadful for the environment. Rather than fly out to Everest to stand in line
+                        behind a
+                        cavalcade of wealthy tourists employing sherpas to carry them up the mountain in search of a
+                        killer
+                        selfie, why not take a trip in Google’s Expeditions app? Expeditions offers VR tours of iconic
+                        landmarks
+                        like Mount Everest or Teotihuacan, as well as educational tours built around subjects like the
+                        recycling industry or even the anatomy of human skin. The 360-degree images involved are
+                        intensely detailed. While Expeditions can’t capture the aura of ancient ruins or towering
+                        mountains, it
+                        does provide excellent learning experiences that won’t gobble up your travel budget or pump
+                        carbon
+                        into the atmosphere.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgCard">
+                    <img src="img/allumette.png">
+                    <a href="https://penrosestudios.com/allumette/" target="_blank">
+                        <h3>Allumette (free)</h3>
+                    </a>
+                </div>
+                <div class="appMore">
+                    <p>Penrose Studios’ free-to-play, stop-motion VR film experience chronicling the story of a young
+                        girl in a cloud-borne village is absolutely breathtaking. In Allumette, you act as the camera,
+                        exploring the gorgeously drawn world however you please — even ignoring the main storyline, if
+                        you so
+                        desire. Make no mistake: This is a narrative, not a game. Though none of the characters in
+                        Allumette
+                        actually speak, per se, the forms of communication they do use (emotive, Sims-like noises,
+                        mostly) do an effective job of conveying emotion and intent.The story itself — based loosely
+                        upon a poem
+                        by Hans Christian Andersen is both charming and heartrending, though we won’t spoil too much
+                        here.
+                        Few VR experiences create the same sense of weight and presence for the viewer, and in
+                        Allumette,
+                        you’ll truly feel like you’ve been transported into a storybook world. The 20-minute runtime is
+                        an
+                        eternity in comparison to most narrative-based VR experiences — few even reach the 10-minute
+                        mark — but
+                        Penrose CEO and founder Eugene Chung considers virtual and augmented reality to be the future of
+                        storytelling, and pushing boundaries is the only way to break paradigms. Allumette lies
+                        somewhere in
+                        the murky realm between filmic narrative and video games, but somehow it rises above genre as a
+                        simply divine experience.If you enjoyed Allumette and you have access to an Oculus Rift, Henry
+                        is also worth checking out.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgCard">
+                    <img src="img/colosse.png">
+                    <a href="https://www.tumblr.com/colossevr" target="_blank">
+                        <h3>Colosse (free)</h3>
+                    </a>
+
+                </div>
+                <div class="appMore">
+                    <p>Top-notch sound design and wonderful, Samurai Jack-esque animation are the driving forces behind
+                        Colosse, a short-story VR experience that responds to the rooted player’s gaze, moving the
+                        narrative forward seamlessly. Described by developer Fire Panda as a “real-time virtual reality
+                        storytelling experience,” Colosse revels in its sense of scale, with clever details throughout.
+                        For instance,
+                        the “hunter” character is rendered at just 12 frames per second, while the rest of the film is
+                        in
+                        60, contributing to its unique atmosphere.
+                        Audio and visual cues direct the player’s gaze, and certain objects “wait” to activate until you
+                        look at them, which provides a natural sense of pace. Certain events will occur depending upon
+                        the direction you’re facing, so you’ll never be stuck searching for the next piece of the
+                        puzzle.
+                        Originally designed as a demo for the Oculus Mobile VRJam, Colosse isn’t quite as fleshed out as
+                        Allumette, but it’s certainly a sight to behold, and a fun display of the ways VR can change
+                        storytelling. Oh, and it’s free.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgCard">
+                    <img src="img/titans.png">
+                    <a href="https://crunchywood.com/titansofspace.html" target="_blank">
+                        <h3>Titans of Space Plus ($10)</h3>
+                    </a>
+                </div>
+                <div class="appMore">
+
+                    <p>When you look up at the night sky and gaze into the vastness of the universe, marveling at the
+                        infinite nothing and everything of creation, time, and space, you’re probably wondering…did
+                        someone make a VR app for this? You’re in luck because they did!
+                        Titans of Space is an immersive journey through the planets and moons of our solar system. It is
+                        a highly educational app but don’t let that deter or bore you. Flying through the cosmos on your
+                        VR headset is as exciting as it is informative. You’ll be taken through guided educational
+                        activities, but are also free to drift through the stars performing your own EVA (Extravehicular
+                        Activity).
+                        Bet you didn’t think learning about Saturns 82 moons could be fun? Well, it is.
+                        Take a journey with your “Flying Professor” tour guide as you experiment with the gravitational
+                        pull of different planets. You’ll analyze each planet with radar, topographic maps, and more.
+                        Explore
+                        the wonders of our solar system from the comfort of your living room.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgCard">
+                    <img src="img/earth.png">
+                    <a href="https://penrosestudios.com/allumette/" target="_blank">
+                        <h3>Google Earth VR (free)</h3>
+                    </a>
+                </div>
+                <div class="appMore">
+
+                    <p>When VR began to blossom as an entertainment medium, one of our first thoughts was: “Google Earth
+                        is going to be super freaking cool.” Turns out, we were right. Flying around the planet like
+                        some
+                        kind of hypersonic eagle is both enjoyable and educational, at least if you happen to like
+                        geography.
+                        And even if you don’t, you can still use the quick-nav menu to visit landmark sites like the
+                        Sphinx
+                        or the Golden Gate Bridge or pay a digital visit to the capital of Djibouti.
+                        Unsurprisingly, lots of landscapes and areas appear to be little more than colorful smudges
+                        (especially if you’re using Google Cardboard), but it’s a free app, so what are you gonna do?
+                        Zooming across vast distances in a matter of seconds and descending upon mammoth structures like
+                        the Hoover Dam is exhilarating, even if you can’t make out the individual cars driving across
+                        it.
+                        Chances are, you’ve used Google Earth before, so you know the drill. It only gets more fun in
+                        virtual reality; just don’t expect too much detail.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgCard">
+                    <img src="img/LitleStar.png">
+                    <a href="https://littlstar.com/" target="_blank">
+                        <h3>Littlstar (free)</h3>
+                    </a>
+
+                </div>
+                <div class="appMore">
+
+                    <p>Using your VR headset to watch content from Netflix, Hulu, and YouTube is fun. It’s like having
+                        your own personal IMAX movie theater to visit any time you want, without dropping obscene
+                        amounts of
+                        coin on popcorn and cookie dough bites. Littlstar VR Cinema changes the game by offering a full
+                        library of 360-degree videos designed to make you feel like you’re the cameraman. Whether you’d
+                        prefer
+                        to educate yourself about the state of Nepal post-earthquake or simply jam out to some music
+                        videos, Littlstar provides a point of view that you just can’t get anywhere else.
+                        There’s Broadway theater content, sports content, and content for kids, making this one of the
+                        best VR experiences out there. It’s also absolutely free. The user interface is smoother on some
+                        platforms than it is on others — looking at you, Rift — but that’s a minor complaint. If you’re
+                        the creative type, you can even film and upload your own 360-degree content for others to view
+                        and
+                        enjoy.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgCard">
+                    <img src="img/virtualdesktoppng.png">
+                    <a href="https://www.vrdesktop.net/" target="_blank">
+                        <h3>Virtual Desktop ($14+)</h3>
+                    </a>
+
+                </div>
+                <div class="appMore">
+
+                    <p>Have you ever fantasized about navigating your computer in virtual reality, like that episode of
+                        The Fairly Odd Parents where Timmy actually goes inside the internet? Neither have we. If that
+                        sound interesting, though, boy, do we have some good news for you! Virtual Desktop lets you use
+                        your
+                        computer in VR, whether you’re browsing the web, watching Netflix, or playing games. Hell, you
+                        can even manage spreadsheets in VR, though we think that might be more of a hindrance than
+                        anything. The app works well with multiple-monitor setups, and using your headset to swivel back
+                        and forth
+                        between screens is pretty cool.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imgCard">
+                    <img src="img/fulldive.png">
+                    <a href="https://edu.google.com.au/expeditions/ar/#about" target="_blank">
+                        <h3>Fulldive VR (free, with in-app purchases)</h3>
+                    </a>
+                </div>
+                <div class="appMore">
+
+                    <p>Fulldive VR calls itself a “Social All-in-One VR Platform” that promises an immersive mobile VR
+                        experience for everyone. Gamers can browse VR content from many different sources on the
+                        Fulldive platform, and the social aspect includes the ability to share content with your
+                        friends. The
+                        game also happens to be compatible with Google Cardboard, so accessing it is incredibly easy.
+                        You can
+                        download the Fulldive VR app through Google Play or the App Store.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="social">
+            <h3>Follow us</h3>
+            <ul>
+                <a href="https://www.facebook.com/">
+                    <img src="img/facebook.png" alt="facebook" target="_blank" width="30px">
+                </a>
+                <a href="https://twitter.com/">
+                    <img src="img/twitter.png" alt="twiter" target="_blank" width="30px">
+                </a>
+                <a href="https://www.instagram.com/">
+                    <img src="img/instagram.png" alt="instagram" target="_blank" width="30px">
+                </a>
+            </ul>
+        </div>
+        <div class="legal">
+            <p>&copy; 2022 Ivana Dimitrova. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="./scripts/registerFormScript.js"></script>
+
+</body>
+
+</html>

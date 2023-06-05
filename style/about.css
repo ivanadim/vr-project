@@ -1,0 +1,578 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;800&display=swap');
+
+
+html {
+    box-sizing: border-box;
+}
+* {
+    box-sizing: inherit;
+    font-family: Poppins;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+}
+main {
+    position: relative;
+}
+/* BACK TO TOP */
+
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    z-index: 100;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+}
+#myBtn img{
+    width: 40px;
+}
+#myBtn p {
+    font-size: 10px;
+    margin: 0;
+    display: none;
+}
+
+#myBtn:hover p{
+    color: #ff77cd;
+    display: block;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    padding: 1% 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    background-color: #1b447ed6;
+    backdrop-filter: invert(1);
+    border-bottom: solid;
+    border-width: 3px;
+    border-image: linear-gradient(45deg,#0553f9,#ff77cd,#0553f9);
+    border-image-slice: 1;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img {
+   height: 40px;
+}
+header nav  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+header nav ul a {
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+}
+header nav ul a:hover{
+    color: #ff77cd;
+}
+.hamburger{
+    display: none;
+    position: relative;
+}
+
+.hamburger-content {
+    display: none;
+    position: absolute;
+    /* background-color: #152F59; */
+    min-width: 100vh;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    right: 50%;
+    transform: translateX(50%);
+}
+.hamburger-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}  
+.hamburger:hover .hamburger-content {
+    display: block;
+}
+.hamburger-content a:hover {
+    background-color: #d4cbd644;
+}
+.myButton {
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    background: linear-gradient(45deg,#0553f9,#ff77cd);
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.profile {
+    display: none;
+    cursor: pointer;
+}
+.profile img{
+   height: 20px;
+}
+
+/* SIDE NAVIGATION */   
+.sideBarNav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 30%;
+    width: 250px;
+    background-color: #fff;
+    border-right: solid;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 10px;
+    border-image: linear-gradient(45deg,#ff77cd,#0553f9,#ff77cd);
+    border-image-slice: 1;
+    transition: .7s ease;
+    left: -240px;
+    top: 40%;
+    z-index: 100;
+}
+
+.sideBarNav:hover{
+    position: fixed;
+    left: 0px;
+    z-index: 100;
+}
+
+.nav{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 100;
+}
+.sideBarNav ul{
+    list-style: none;
+    padding: 0;
+}
+.sideBarNav ul li {
+    padding: 15px;
+}
+
+.sideBarNav ul a {
+    color: #303030;
+    text-decoration: none;
+    font-size: 14px;
+}
+.sideBarNav ul a:hover{
+    color: #ff77cd;
+}
+/* .nav:hover{
+    visibility: visible; 
+} */
+
+/* WHAT IS VR */
+
+.vr{
+    background-image: url(../img/girl.jpg);
+    height: 100vh;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+
+}
+
+.content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-25px);
+    /* transform: translateX(30px); */
+    z-index: 0;
+}
+.content h2{
+    font-weight: 700;
+    font-size: 42px;
+    color: #ff77cd;
+    margin: 0px;
+}
+.content p {
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 18px;
+    color: #fff;
+    padding: 20px 0px;
+    max-width: 400px;
+    margin-top: 30px;
+}
+
+/* TYPE OF VR */
+.typeVR{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    height: 320px;
+    padding-top: 70px;
+    margin-bottom: 200px;
+
+}
+.typeVR h2{
+    font-weight: 700;
+    font-size: 32px;
+    color: #303030;
+}
+.typeVR .types {
+ margin-top: 5%;
+ display: flex;
+ justify-content: space-between;  
+ height: 100%;
+}
+.type{
+    background: transparent;
+    border-radius: 10px;
+    margin: 1%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    width: 33%;
+    color: #303030;
+    font-size: 20px;
+    font-weight: 500;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.type > div {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.type > div::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+
+.type h3 {
+    font-size: 20px;
+    color: #303030;
+
+}
+.type p {
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 20px;
+    color: #8d8b8b;
+}
+.type:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* CASES */
+
+.cases {
+    background-image: url(../img/background.png);
+}
+
+.caseInscription {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.caseInscription h2{
+    font-weight: 700;
+    font-size: 34px;
+    color: #ff77cd;
+}
+.caseInscription p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    color: #fff;
+    padding: 10px;
+}
+
+
+.vrCases {
+    padding: 5% 20%;
+}
+
+
+.vrCases li{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #ffffff1a;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+.vrCases li:hover{
+    background-color: #fff;
+
+}
+
+.vrCases li:hover >  div {
+    color: #303030;
+}
+
+.vrCases li:hover >  div > p {
+    color: #303030;
+}
+.hedTitle{
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 2% 0%;
+}
+
+.caseImageDescr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 2%;
+}
+
+.caseImageDescr p{
+    width: 45%;
+    font-size: 12px;
+    color: #fff;
+    line-height: 18px;
+}
+.caseImageDescr img{
+    width: 50%;
+    border-radius: 8px;
+}
+
+/* BEST APP */
+
+.bestAPP{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.AppDiscription{
+    text-align: center;
+}
+.AppDiscription h2{
+    font-size: 34px;
+
+}
+.AppDiscription p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #303030;
+}
+
+.imgCard img{
+    width: 50%;
+}
+.imgCard a{
+    text-decoration: none;
+} 
+.best{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 15%;
+}
+.best .card{
+    height: 250px;
+    position: relative;
+    max-width: 45%;
+    min-height: 30%;
+    /* height: 30%; */
+    background-color: #fff;
+    margin: 30px 10px;
+    /* padding: 10px; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(100px);
+    background: linear-gradient(45deg,rgb(0, 83, 255, 0.5),rgb(255, 0, 161, 0.5));
+    opacity: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+}
+.best .card:hover {
+    height: 350px;
+}
+.best .card .imgCard {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    top: -10%;
+    background-color: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    z-index: 1;
+}
+.best .card .imgCard img{
+    width: 100%;
+}
+.best .card .imgCard h3 {
+    font-size: 14px;
+    color: #303030;
+    text-align: center;
+  }
+  .best .card .appMore p{
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+  }
+.best .card .appMore{
+    position: relative;
+    top: -50px;
+    height: 65%;
+    padding : 10px;
+    color : #303030;
+    text-align : center;
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+    overflow-y: scroll;
+}
+
+.best .card .appMore::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+.best .card:hover .appMore{
+    margin-top: 30px;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+
+}
+
+/* FOOTER */
+footer{
+    background-color: #303030;
+    margin-top: 50px;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+.social ul {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+.social h3{
+    color: #fff;
+    font-size: 20px;
+}
+  
+.legal{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    color: #fff;
+    font-size: xx-small;
+}
+
+@media screen and (max-width: 700px) {
+    
+    /* NAVIGATION */
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+    }
+    .bar {
+        background-color: #fff;
+            display: block;
+            width: 25px;
+            height: 1px;
+            margin: 3px auto;
+    }
+    header nav  ul {
+        display: none;
+    }
+    .myButton{
+        display: none;
+    }
+    .profile{
+        display: block;
+        height: 20px;
+    }
+    .logo img {
+        height: 25px;
+    }
+    .types{
+        flex-direction: column;
+        align-items: center;
+    }
+    .type{
+        width: 100%;
+        height: 200px;
+    }
+
+    /* WHAT IS VR SECTION */
+    .vr {
+        justify-content: center;
+    }
+
+    /* TYPES VR SECTION */
+
+    .typeVR {
+        height: unset;
+        margin-bottom: 70px;
+    }
+    
+    /* CASES SECTION */
+    .caseImageDescr {
+        flex-direction: column;
+    }
+    .caseImageDescr img {
+        width: 100%;
+    }
+    .caseImageDescr p {
+        width: unset;
+    }
+
+    .vrCases {
+        padding: 5% 10%;
+    }
+
+    /* BEST APP */
+
+    .best .card {
+        max-width: unset;
+    }
+    .bestAPP{
+        width: 80%;
+    }
+    .best .card .imgCard img {
+        width: 70%;
+    }
+}

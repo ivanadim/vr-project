@@ -1,0 +1,40 @@
+#signUpIframe {
+    left: 50%; 
+    position: absolute;
+    transform: translateX(-47%);
+    top: 10%;
+    display: none;
+    z-index: 20;
+}
+
+#cancelButton {
+    
+    border: solid;
+    border-image: linear-gradient(45deg,#ff77cd,#0553f9,#ff77cd);
+    border-image-slice: 1;
+}
+.registerBtnOption{
+  
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    border: none;
+    padding: 10px 20px;
+}
+#registerButton {
+    background: linear-gradient(45deg,#0553f9,#ff77cd);
+
+}
+
+#registerOptions {
+    left: 50%; 
+    position: absolute;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    bottom: 20%;
+}
+
+

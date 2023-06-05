@@ -1,1 +1,1 @@
-# vr-project
+# earth_project

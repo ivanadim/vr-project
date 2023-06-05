@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/signup_iframe.css">
+    <link rel="stylesheet" href="style/main.css" type="text/css">
+    <title>Project</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_self">Home</a></li>
+                <li><a href="about.html" target="_self">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+
+                <div class="hamburger-content">
+                    <a href="index.html" target="_self">Home</a>
+                    <a href="about.html" target="_self">About</a>
+                </div>
+            </div>
+        </nav>
+        <a href="#" class="myButton" onclick="showSignUpForm()">Sign In</a>
+        <div class="profile" onclick="showSignUpForm()"> <img src="img/profile.png" alt="profile"> </div>
+    </header>
+
+    <main>
+        <!-- IFRAME -->
+        <div id="signUpIframe">
+            <iframe src="./signup.html" width="500px" height="600px" scrolling="no" frameBorder="0"></iframe>
+            <div id="registerOptions">
+                <div id="cancelButton" class="registerBtnOption" onclick="hideSignUpForm()">Cancel</div>
+                <div id="registerButton" class="registerBtnOption" onclick="hideSignUpForm()">Register</div>
+            </div>
+        </div>
+        <!-- MAIN -->
+        <section class="mainContainer">
+            <div class="title">
+                <h1>Touch the past
+                    <br>
+                    Control the features
+                </h1>
+                <p>Virtual Reality must not shade us from the realisties of humanity or else we'll cease to be human.
+                </p>
+                <!-- <button class="secButton">Explore Now</button> -->
+            </div>
+            <div class="heroimages">
+                <img src="img/man11.png" alt="imagesMan">
+            </div>
+        </section>
+    </main>
+    <!-- JAVA SCRIPT -->
+    <script src="./scripts/registerFormScript.js"></script>
+</body>
+
+</html>
